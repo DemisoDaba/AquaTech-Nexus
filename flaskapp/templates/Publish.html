@@ -1,0 +1,83 @@
+<h1 class="title"> Publish</h1>
+<div class="publish-continer">
+    <form method="post" class="col1" action="{{  url_for('publish')  }}" enctype="multipart/form-data">
+        {{ form.hidden_tag() }}
+        {{ form.title.label }}
+        {% if form.title.errors %}
+            {{ form.title(class="is-invalid") }}
+            <div class="invalid-feedback">
+                {% for error in form.title.errors %}
+                    <span>{{ error }}</span>
+                {% endfor %}
+            </div>
+        {% else %}
+            {{ form.title() }}
+        {% endif %}
+
+        {{ form.subtitle.label }}
+        {% if form.subtitle.errors %}
+            {{ form.subtitle(class="is-invalid") }}
+            <div class="invalid-feedback">
+                {% for error in form.subtitle.errors %}
+                    <span>{{ error }}</span>
+                {% endfor %}
+            </div>
+        {% else %}
+            {{ form.subtitle() }}
+        {% endif %}
+
+        {{ form.description.label }}
+        {% if form.description.errors %}
+            {{ form.description(class="is-invalid") }}
+            <div class="invalid-feedback">
+                {% for error in form.description.errors %}
+                    <span>{{ error }}</span>
+                {% endfor %}
+            </div>
+        {% else %}
+            {{ form.description() }}
+        {% endif %}
+
+        {{ form.genre.label }}
+        {% if form.genre.errors %}
+            {{ form.genre(class="is-invalid") }}
+            <div class="invalid-feedback">
+                {% for error in form.genre.errors %}
+                    <span>{{ error }}</span>
+                {% endfor %}
+            </div>
+        {% else %}
+            {{ form.genre() }}
+        {% endif %}
+        
+        {{ form.cover(class="custom-file-upload") }}
+        {% if form.cover.errors %}
+            {% for error in form.cover.errors %}
+                <span class="text-danger">{{ error }}</span><br>
+            {% endfor %}
+        {% endif %}
+
+        {{ form.manuscript(class="custom-file-upload") }}
+        {% if form.manuscript.errors %}
+            {% for error in form.manuscript.errors %}
+                <span class="text-danger">{{ error }}</span><br>
+            {% endfor %}
+        {% endif %}
+
+        {{ form.price.label }}
+        {% if form.price.errors %}
+            {{ form.price(class="is-invalid") }}
+            <div class="invalid-feedback">
+                {% for error in form.price.errors %}
+                    <span>{{ error }}</span>
+                {% endfor %}
+            </div>
+        {% else %}
+            {{ form.price() }}
+        {% endif %}
+
+        <div>
+            {{ form.submit() }}
+        </div>
+    </form>
+</div>
