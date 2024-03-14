@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OptiFlow | Water Application Recommendations</title>
+	<link rel="stylesheet" href="../static/styles/optiflow_styles.css">
+</head>
+<body>
+    <header>
+        <h1>OptiFlow | Water Applications</h1>
+    </header>
+
+    <div class="container">
+        <form id="recommendationForm">
+            <label for="crop_type">Select Crop Type:</label>
+            <select id="crop_type" name="crop_type" required>
+                <option value="" disabled selected>Select Crop Type</option>
+                <option value="Rice">Rice</option>
+                <option value="Wheat">Wheat</option>
+                <option value="Corn">Corn</option>
+                <option value="Barley">Barley</option>
+                <option value="Soybean">Soybean</option>
+                <option value="Cotton">Cotton</option>
+                <option value="Potato">Potato</option>
+                <option value="Tomato">Tomato</option>
+            </select>
+
+            <label for="soil_type">Select Soil Type:</label>
+            <select id="soil_type" name="soil_type" required>
+                <option value="" disabled selected>Select Soil Type</option>
+                <option value="Sandy">Sandy</option>
+                <option value="Loam">Loam</option>
+                <option value="Clay">Clay</option>
+            </select>
+
+            <label for="weather_condition">Select Weather Condition:</label>
+            <select id="weather_condition" name="weather_condition" required>
+                <option value="" disabled selected>Select Weather Condition</option>
+                <option value="Sunny">Sunny</option>
+                <option value="Cloudy">Cloudy</option>
+                <option value="Rainy">Rainy</option>
+            </select>
+
+            <label for="growth_stage">Select Growth Stage:</label>
+            <select id="growth_stage" name="growth_stage" required>
+                <option value="" disabled selected>Select Growth Stage</option>
+                <option value="Seedling">Seedling</option>
+                <option value="Vegetative">Vegetative</option>
+                <option value="Reproductive">Reproductive</option>
+                <option value="Maturation">Maturation</option>
+            </select>
+
+            <input type="submit" value="Get Recommendations">
+        </form>
+
+        <div id="recommendations"></div>
+
+        <button id="saveCsv" style="display: none;">Save as CSV</button> <!-- New button for saving as CSV -->
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Water Application Recommendations</p>
+    </footer>
+
+    <script src="../static/scripts/opti_script.js"></script> <!-- Include your script file -->
+</body>
+</html>
