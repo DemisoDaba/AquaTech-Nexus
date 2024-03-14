@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/header.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/footer.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/navbar.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/book.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts/main.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts/book.js') }}"></script>
+    <title>AquaTech Nexus: Water Research Code Library</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/icon.png') }}">
+</head>
+<body>
+<div class="navbar">
+    <a class="navbar-item-icon">
+        <img src="{{ url_for('static', filename='images/balcklogo.png') }}" alt="logo" width="80">
+    </a>
+    <data class="navbar-item menu">
+        <ul>
+            <li><a href="{{ url_for('home') }}">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </data>
+    {% if current_user.is_authenticated %}
+        <a class="navbar-item basket" href="{{ url_for('goToCart') }}"><i class="fas fa-shopping-basket" style="color: black;"></i></a>
+        <a class="navbar-item" href="{{ url_for('dashboard') }}"><i class="fas fa-user" style="color: black;"></i></a>
+        <p class="username1" style="color: black;">{{ current_user.username }}</p>
+        <a class="navbar-item" href="{{ url_for('logout') }}"><i class="fas fa-sign-out-alt" style="color: red;"></i></a>
+    {% else %}
+        <a class="navbar-item basket"><i class="fas fa-shopping-basket" style="color: black;"></i></a>
+        <a class="navbar-item" href="{{ url_for('login') }}"><i class="fas fa-user" style="color: black;"></i></a>
+    {% endif %}
+</div>
+<div class="book-container">
+    <div class="img-conatiner">
+        <img src="{{ url_for('get_image', filename=book.cover) }}">
+    </div>
+    <div class="info-container">
+        <div class="price-bubble">
+            <p>{{book.price}}$</p>
+        </div>
+        <h2>{{book.title}}</h2>
+        <h4>{{book.subtitle}}</h4>
+        <p>{{book.author}}</p>
+        <div class="space"></div>
+        <h4>Description</h4>
+        <p>{{book.description}}</p>
+        {% if current_user.is_authenticated %}
+            <button class="cart-button" onclick="addToCart('{{book.id}}',  '{{book.title}}')">Add to cart</button>
+        {% else %}
+            <a class="cart-button" href="{{ url_for('login') }}">Add to cart</a>
+        {% endif %}
+    </div>
+</div>
+<footer>
+    <div class="footer_flex">
+        <div class="footer_flex_section1">
+            <h1>AquaTech Nexus</h1>
+            <div class="line"></div>
+            <h5>Privacy Policy: Read here</h5>
+            <h5>Designed By Demiso Daba</h5>
+        </div>
+        <div class="footer_flex_section2">
+            <h3>Road Map</h3>
+            <ul>
+                <li>Business, Product & Services</li>
+                <li>Galleries, Contact & Support</li>
+                <li>About Us, Blog/News & FAQ</li>
+            </ul>
+            <div class="copyrights">
+                <h5>© 2024 AquaTech Nexus. All Rights Reserved</h5>
+            </div>
+        </div>
+        <div class="footer_flex_section3">
+            <input type="text" id="username" name="username" placeholder="Email address"/>
+            <button class="subscribe" onclick="subscribe()">Subscribe</button>
+            <div class="social">
+                <a href="https://www.facebook.com"><span class="fab fa-facebook"></span></a>
+				<a href="https://www.instagram.com"><span class="fab fa-instagram"></span></a>
+				<a href="https://www.linkedin.com"><span class="fab fa-linkedin"></span></a>
+				<a href="https://twitter.com/DemoNkmt1"><span class="fab fa-twitter"></span></a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

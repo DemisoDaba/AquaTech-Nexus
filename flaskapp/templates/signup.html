@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/signup.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+    <title>AquaTech Nexus: Water Research Code Library</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/icon.png') }}">
+</head>
+<body>
+    <div class="signup_container">
+        <p class="title">Register</p>
+        <form method="post" action="{{ url_for('register') }}">
+            {{ form.hidden_tag() }}
+            <div class="inputs">
+                <div class="col1">
+                    {{ form.usertype.label }}
+                    {% if form.usertype.errors %}
+                        {{ form.usertype(class="is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.usertype.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.usertype(class="user-type", id="user-type") }}
+                    {% endif %}
+                    
+                    {{ form.username.label }}
+                    {% if form.username.errors %}
+                        {{ form.username(class="is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.username.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.username(class="form-control") }}
+                    {% endif %}
+
+                    {{ form.email.label }}
+                    {% if form.email.errors %}
+                        {{ form.email(class="is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.email.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.email(class="form-control") }}
+                    {% endif %}
+                    
+                </div>
+                <div class="col1">
+                    {{ form.address.label }}
+                    {% if form.address.errors %}
+                        {{ form.address(class="is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.address.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.address(class="form-control") }}
+                    {% endif %}
+                    
+                    {{ form.phone.label }}
+                    {% if form.phone.errors %}
+                        {{ form.phone(class="is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.phone.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.phone(class="form-control") }}
+                    {% endif %}
+                    
+                    {{ form.password.label }}
+                    {% if form.password.errors %}
+                        {{ form.password(class="is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.password.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.password(class="form-control") }}
+                    {% endif %}
+
+                </div>
+            </div>
+            
+            <div>
+                {{ form.submit(class="btn") }}
+            </div>
+        </form>
+        <p class="login"> Already have an account? <a href="{{ url_for('login') }}">Log In</a></p>
+    </div>
+</body>
+</html>
