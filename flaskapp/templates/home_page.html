@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/header.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/footer.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/container.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/navbar.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/dropdown.css') }}"> <!-- Link to external CSS for dropdown styling -->
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts/main.js') }}"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>AquaTech Nexus: Water Research Code Library</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/icon.png') }}">
+</head>
+<body>
+    <div class="navbar" id="navbar">
+        <a class="navbar-item-icon" href="{{ url_for('home') }}" style="font-size: 32px;">
+			<span style="color: cyan;">Aqua</span><span style="color: silver;">Tech</span>
+			<span style="color: orange; font-weight: bold;">Nexus</span>
+        <data id="menu" class="navbar-item menu">
+            <ul>
+                <li><a id="home" class="active" href="{{ url_for('home') }}">HOME</a></li>
+                <li><a id="about" href="#about">ABOUT</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn live-score">Free-Tools</a>
+                    <div class="dropdown-content">
+                        <a href="{{ url_for('optiflow') }}">Optiflow</a>
+						<a href="{{ url_for('aquasync') }}">AquaSync</a>
+						<a href="#">Filling ...</a>
+                    </div>
+                </li>
+                <li><a id="contact" href="#contact">CONTACT</a></li>
+            </ul>
+        </data>
+            {% if current_user.is_authenticated %}
+                <a class="navbar-item basket" href="{{ url_for('goToCart') }}"><i class="fas fa-shopping-basket" style="color: white;"></i></a>
+                <a class="navbar-item" href="{{ url_for('dashboard') }}"><i class="fas fa-user" style="color: white;"></i></a>
+                <p class="username">{{ current_user.username }}</p>
+                <a class="navbar-item" href="{{ url_for('logout') }}" style="color: red;">Logout</a>
+            {% else %}
+                <a class="navbar-item basket" href="{{ url_for('goToCart') }}"><i class="fas fa-shopping-basket" style="color: white;"></i></a>
+				<a class="navbar-item" href="{{ url_for('login') }}"><i class="fas fa-user" style="color: white;"></i></a>
+            {% endif %}
+        </div>
+
+        <div class="displaycontainer" >
+            <div class="container-text">
+                <p class="text">Welcome to AquaTech Nexus! We're here to bridge the gap between water and technology through innovation and collaboration, uniting a vibrant community of innovators, researchers, and industry professionals to advance water-related technology.</p>
+                <button id="discover_more"> Discover more </button>            
+            </div>
+        </div>
+        <div class="pink-container">
+            <p class="book-container-title">Top Tech Codes</p>
+            <p class="book-container-sub-title">Uncover invaluable gems in our curated collection of Best Selling Tech Tools—where groundbreaking innovations meet the needs of code enthusiasts everywhere</p>
+            <div class="book-preview-container">
+              
+                <div class="book-preview">
+                    <img src="{{ url_for('static', filename='images/book1.jpg') }}" alt="Book Title 3">
+                    <div class="shop-now">
+                        <img src="{{ url_for('static', filename='images/shopping-bag.png') }}" alt="Book Title 1" width="20">                
+                            <div class="tooltip">Add to card</div>
+                     </div>
+                    <div class="book-details">
+                        <p class="author">Demiso Daba</p>
+                        <p class="book-title">Web Title: Water Application Reccomendations</p>
+                        <p class="price">Price: <del>$24.99</del> Free</p>
+						<p class="rating">Rating: &#9733;&#9733;&#9733;&#9733;&#9734;&#189; (4.5/5)</p>
+                        
+                    </div>
+                </div>
+                <div class="book-preview">
+                    <img src="{{ url_for('static', filename='images/book2.jpg') }}" alt="Book Title 3">
+                    <div class="shop-now">
+                        <img src="{{ url_for('static', filename='images/shopping-bag.png') }}" alt="Book Title 1" width="20">                
+                            <div class="tooltip">Add to card</div>
+                     </div>
+                    <div class="book-details">
+                        <p class="author">Demiso Daba</p>
+                        <p class="book-title">GUI: for Filling Rainfall Data</p>
+                        <p class="price">Price: $54.99</p>
+                        <p class="rating">Rating:&#9733;&#9733;&#9733;&#9733;&#9733; (5/5)</p>
+                    </div>
+                </div>
+                <div class="book-preview">
+                    <img src="{{ url_for('static', filename='images/book3.jpg') }}" alt="Book Title 3">
+                    <div class="shop-now">
+                        <img src="{{ url_for('static', filename='images/shopping-bag.png') }}" alt="Book Title 1" width="20">                
+                            <div class="tooltip">Add to card</div>
+                     </div>
+                    <div class="book-details">
+                        <p class="author">Demiso Daba</p>
+                        <p class="book-title">Irrigation and Water Optimization</p>
+                        <p class="price">Price: <del>$29.99</del> Free</p>
+						<p class="rating">Rating: &#9733;&#9733;&#9733;&#9733;&#9734;&#189; (4.5/5)</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-container" id="about_offset">
+            <div class="about-container-img"></div>
+            <div class="about-container-text">
+                <p>This is AquaTech Nexus! It serves as a dynamic platform connecting innovators, researchers, and enthusiasts at the intersection of water and technology. Writers can contribute their expertise by crafting codes, notes, or books focused on advancements in water technology. Users, whether researchers or industry professionals, can explore, can use free tools, purchase, and exchange cutting-edge insights, fostering collaboration and progress in water-related tech research.</p>
+                <div class="about-container-buttons">
+                    {% if current_user.is_authenticated %}
+                        {% if current_user.usertype == "writer" %}
+                            <button id="buy_button_authenticated">Order to buy</button>
+                            <button id="publish_button_authenticated">Publish | Cover & Code</button>
+                        {% else %}
+                            <button id="buy_button_authenticated">Order to buy</button>
+                        {% endif %}
+                    {% else %}
+                        <button id="buy_button">Order to buy</button>
+                        <button id="publish_button">Publish | Cover & Code</button>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="pink-container help" id="contact_offset">
+            <div class="contact-details">
+				<p class="title"><u>Need help</u>?</p>
+				<h2><strong><u>Contributor</u></strong></h2>
+				<h6><strong>Name:</strong> Demiso Daba</h6>
+				<h2><strong><u>Address</u></strong></h2>
+				<p><strong>Email:</strong> <span style="text-transform: lowercase;">demo.nkmt1@gmail.com</span></p>
+				<p><strong>Phone:</strong> +251 925 773 433</p>    
+			</div>
+    
+            <div class="contact-picture">
+                <img src="{{ url_for('static', filename='images/needhelp.jpg') }}" alt="Profile Picture" width="300">
+            </div>
+        </div>
+        <footer>
+            <div class="footer_flex">
+                <div class="footer_flex_section1">
+                    <h1>
+                        AquaTech Nexus
+                    </h1>
+                    <div class="line">
+
+                    </div>
+                    <h5>Privacy Policy: Read here</h5>
+					<h5>Designed By Demiso Daba</h5>
+                </div>
+                <div class="footer_flex_section2">
+                    <h3>Road Map</h3> 					
+                    <ul>
+                        <li>Business, Product & Services</li>
+                        <li>Galleries, Contact & Support</li>
+						<li>About Us, Blog/News & FAQ</li>
+                    </ul> 
+                    <div class="copyrights">
+                        <h5>© 2024 AquaTech Nexus. All Rights Reserved</h5>
+                    </div>
+                </div>
+                <div class="footer_flex_section3">
+                    <input type="text" id="username" name="username" placeholder="Email address"/>
+                    <button class="subscribe" onclick="subscribe()">Subscribe</button>
+                    <div class="social">
+                        <a href="https://www.facebook.com"><span class="fab fa-facebook"></span></a>
+						<a href="https://www.instagram.com"><span class="fab fa-instagram"></span></a>
+						<a href="https://www.linkedin.com"><span class="fab fa-linkedin"></span></a>
+						<a href="https://twitter.com/DemoNkmt1"><span class="fab fa-twitter"></span></a>
+                    </div>
+
+                </div>
+				
+            </div>
+        </footer>
+    </body>
+	
+</html>
