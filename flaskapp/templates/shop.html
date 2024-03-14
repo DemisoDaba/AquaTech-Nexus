@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/header.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/footer.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/container.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/navbar.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/shop.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts/main.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts/Shop.js') }}"></script>
+
+    <title>AquaTech Nexus: Water Research Code Library</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/icon.png') }}">
+</head>
+<body>
+    <div class="navbar">
+        <a class="navbar-item-icon">
+            <img src="{{ url_for('static', filename='images/balcklogo.png') }}" alt="logo" width="80" href="{{ url_for('home') }}">
+        </a>
+        <data class="navbar-item menu">
+            <ul>
+                <li><a href="{{ url_for('home') }}">HOME</a></li>
+                <li><a href="{{ url_for('about') }}">ABOUT</a></li>
+                <li><a href="{{ url_for('contact') }}">CONTACT</a></li>
+            </ul>
+        </data>
+        {% if current_user.is_authenticated %}
+            <a class="navbar-item basket" href="{{ url_for('goToCart') }}"><i class="fas fa-shopping-basket" style="color: black;"></i></a>
+            <a class="navbar-item" href="{{ url_for('dashboard') }}"><i class="fas fa-user" style="color: black;"></i></a>
+            <p class="username1">{{ current_user.username }}</p>
+            <a class="navbar-item" href="{{ url_for('logout') }}"><i class="fas fa-sign-out-alt" style="color: red;"></i></a>
+        {% else %}
+            <a class="navbar-item basket"><i class="fas fa-shopping-basket" style="color: black;"></i></a>
+            <a class="navbar-item" href="{{ url_for('login') }}"><i class="fas fa-user" style="color: black;"></i></a>
+        {% endif %}
+    </div>
+    <div class="filter-container">
+        <form method="POST" action="{{ url_for('find_book') }}">
+            {{ form.hidden_tag() }}
+            {{ form.title.label(class="title") }}
+            {% if form.title.errors %}
+                {{ form.title(class="is-invalid") }}
+                <div class="invalid-feedback">
+                    {% for error in form.title.errors %}
+                        <span>{{ error }}</span>
+                    {% endfor %}
+                </div>
+            {% else %}
+                {{ form.title() }}
+            {% endif %}
+
+            {{ form.genre.label(class="genre") }}
+            {% if form.genre.errors %}
+                {{ form.genre(class="is-invalid") }}
+                <div class="invalid-feedback">
+                    {% for error in form.genre.errors %}
+                        <span>{{ error }}</span>
+                    {% endfor %}
+                </div>
+            {% else %}
+                {{ form.genre() }}
+            {% endif %}
+
+            {{ form.author.label(class="author") }}
+            {% if form.author.errors %}
+                {{ form.author(class="is-invalid") }}
+                <div class="invalid-feedback">
+                    {% for error in form.author.errors %}
+                        <span>{{ error }}</span>
+                    {% endfor %}
+                </div>
+            {% else %}
+                {{ form.author() }}
+            {% endif %}
+            
+            <div>
+                {{ form.submit(class="btn") }}
+            </div>
+        </form>
+    </div>
+    <div class="Books">
+        <div class="pink-container">
+            <div class="book-preview-container1">
+                {% for book in books %}
+                    <div class="book-preview" onclick="navigateToBook('{{ book.id }}')">
+                        <img src="{{ url_for('get_image', filename=book.cover) }}" alt="{{ book.title }}">
+                        <div class="shop-now" onclick="addToCart('{{ book.id }}', '{{ book.title }}')">
+                            <img src="{{ url_for('static', filename='images/shopping-bag.png') }}" alt="Book Title 1" width="20">                
+                            <div class="tooltip">Add to cart</div>
+                        </div>
+                        <div class="book-details">
+                            <p class="author">{{ book.author.username }}</p>
+                            <p class="book-title">{{ book.title }}</p>
+                            <p class="price">{{ book.price }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="footer_flex">
+        <div class="footer_flex_section1">
+            <h1>AquaTech Nexus</h1>
+            <div class="line"></div>
+            <h5>Privacy Policy: Read here</h5>
+            <h5>Designed By Demiso Daba</h5>
+        </div>
+        <div class="footer_flex_section2">
+            <h3>Road Map</h3>  
+            <ul>
+                <li>Business, Product & Services</li>
+                <li>Galleries, Contact & Support</li>
+                <li>About Us, Blog/News & FAQ</li>
+            </ul> 
+            <div class="copyrights">
+                <h5>© 2024 AquaTech Nexus. All Rights Reserved</h5>
+            </div>
+        </div>
+        <div class="footer_flex_section3">
+            <input type="text" id="username" name="username" placeholder="Email address"/>
+            <button class="subscribe" onclick="subscribe()">Subscribe</button>
+            <div class="social">
+                <a href="https://www.facebook.com"><span class="fab fa-facebook"></span></a>
+                <a href="https://www.instagram.com"><span class="fab fa-instagram"></span></a>
+                <a href="https://www.linkedin.com"><span class="fab fa-linkedin"></span></a>
+                <a href="https://twitter.com/DemoNkmt1"><span class="fab fa-twitter"></span></a>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>
