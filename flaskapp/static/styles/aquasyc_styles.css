@@ -1,0 +1,123 @@
+/* styles.css */
+
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the body takes at least the height of the viewport */
+}
+
+header, footer {
+  background-color: #36454f;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+#irrigation-form {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  width: 30%;
+}
+
+#irrigation-log {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  width: 65%;
+}
+
+#irrigation-log h2 {
+  margin-top: 0;
+}
+
+.irrigation-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.irrigation-form input[type="date"],
+.irrigation-form input[type="number"],
+.irrigation-form select {
+  width: calc(100% - 12px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.irrigation-form button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.irrigation-form button#add-irrigation {
+  background-color: #28a745; /* Green for Log Irrigation */
+  color: white;
+}
+
+.irrigation-form button#cancel-edit {
+  background-color: #ffc107; /* Yellow for Cancel Edit */
+  color: black;
+}
+
+.irrigation-form button:hover {
+  opacity: 0.8;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table tr:hover {
+  background-color: #ddd;
+}
+
+.btn-edit {
+  background-color: #ffc107; /* Yellow for Edit */
+  color: black;
+}
+
+.btn-delete {
+  background-color: #dc3545; /* Red for Delete */
+  color: white;
+}
+
+footer {
+  background-color: #36454f;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: auto; /* Push the footer to the bottom */
+}

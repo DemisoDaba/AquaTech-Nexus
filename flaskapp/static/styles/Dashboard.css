@@ -1,0 +1,219 @@
+html{
+    height: 100vh;
+}
+body{
+    height:  90%;
+    overflow: hidden;
+}
+
+.navbar{
+    position: relative;
+    color: black;
+    height: 12%;
+    box-shadow: 1px 1px 8px 2px rgb(228, 227, 227);
+
+}
+
+.navbar1{
+    position: relative;
+    color: black;
+    height: 12%;
+    box-shadow: 1px 1px 8px 2px rgb(228, 227, 227);
+
+}
+.navbar a{
+    color: black;
+   
+}
+.navbar1 a{
+    color: black;
+   
+}
+.dashboard-container{
+    
+    width: 100%;
+    display: flex;
+    height: 100%;
+}
+.menu-container{
+    width: 15%;
+    color: white;
+    background-color: #191919;
+    padding-top: 2%;
+    
+}
+.menu-item{
+    font-size: 18px;
+    cursor: pointer;
+    padding: 15px 30px;
+}
+.active{
+    font-weight: 600;
+    background: white;
+    color: black;
+}
+.content-container .title{
+    padding-bottom: 2%;
+}
+.content-container{
+    width: 80% ;
+    height: 100% ;
+    padding: 2% 0 0 5%;
+      
+}
+.book-container{
+    padding: 2% 0 ;
+    display: flex ;
+    height: 80%; 
+    gap: 25px;
+    flex-wrap: wrap ;
+    width: 98%;
+    overflow-y: auto ;
+}
+.Book-item{
+    display: flex;
+    width: 23%;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+.book-container img{
+    max-width:150px;
+}
+.book-info{
+    padding-left: 20px;
+    padding-top: 5px;
+}
+.Book-item .book-name{
+font-size: 28px;
+padding-bottom: 10px;
+}
+.bBook-item a{
+    color: blue;
+    text-decoration: underline;
+    
+}
+.edit-btn{
+    padding: 8px 20px;
+    margin-top:10px ;
+    border: none;
+    background: #191919;
+    font-size: 13px;
+    cursor: pointer;
+    color: white;
+    transform: translateX(-100px);
+
+    
+}
+.publish-continer{
+    display: flex;
+    flex-direction: column;
+    height: 81%;
+    padding: 10px 13%;
+    margin: auto;
+    overflow: auto;
+}
+.publish-continer form{
+    display: flex;
+    flex-direction: column;
+    background: #efefef;
+    padding: 16%;
+    align-items: stretch;
+}
+.publish-continer form input, .publish-continer form select, .custom-file-upload{
+    border: 1px solid;
+    box-shadow: 1px 1px 5px  #00000036;
+    margin-bottom: 20px;
+    background: white;
+}
+
+
+.dash{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.dash .earnings{
+    margin: auto;
+    border-radius: 50%;
+    padding: 50px 19px;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    background: #ffe8d1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.dash .price{
+    font-size: 45px;
+    padding: 30px;
+    
+}
+
+.dash .earnings .label{
+    text-align: center;
+    color: #EC9938;
+    font-size: 20px;
+    font-weight: 600;
+}
+.signup_container{
+    height: 81%;
+    overflow: auto;
+}
+
+.signup_container form{
+    margin: auto;
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    overflow: hidden;
+    
+}
+
+.signup_container .inputs{
+    display: flex;
+    width: 90%;
+    gap: 46px;
+    padding: 20px;
+}
+
+.signup_container .col1{
+    padding: 1%;
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    justify-content:baseline;
+    background-color: rgb(221 221 221 / 20%);
+    box-shadow: 0px 0px 10px 0px rgb(217 217 217); padding: 20px;
+}
+
+select, input{
+    box-shadow: 1px 1px 5px  #00000036;
+    margin-bottom: 20px;
+}
+
+.signup_container .login{
+    font-size: 14px;
+    text-align: center;
+}
+.signup_container .login a:hover{
+    color: gray;
+}
+.btn {
+    padding: 13px 19px;
+    border: none;
+    background: #191919;
+    font-size: 15px;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #00000024;
+    align-self: end;
+    margin-left: 20px;
+}
+.col1 h2{
+    margin-bottom: 40px;
+}
+
+
