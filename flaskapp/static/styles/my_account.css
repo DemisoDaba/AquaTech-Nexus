@@ -1,0 +1,35 @@
+/* static/styles/my_account.css */
+
+.container {
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 320px; 
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.invalid-feedback {
+    color: #dc3545;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.form-group {
+    margin-bottom: 10px; 
+}
+
+.form-control {
+    width: calc(100% - 20x);
+}
