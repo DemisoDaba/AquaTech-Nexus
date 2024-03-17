@@ -308,7 +308,7 @@ def showError(form):
 def send_upload_email(email, upload_link):
     """Defines the system for sending upload link to the client email"""
     try:
-        msg = Message('Upload your Book', recipients=[email], sender="noreply@storyshore.com")
+        msg = Message('Upload your Book', recipients=[email], sender="demo.nkmt1@gmail.com")
         path = os.path.join(os.getcwd(), 'books', upload_link)
         with open(path, 'rb') as file:
             msg.attach(upload_link, "application/pdf", file.read())
