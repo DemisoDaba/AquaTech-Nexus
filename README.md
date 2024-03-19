@@ -60,7 +60,3 @@
 ## License
 
 AquaTech-Nexus is released under the MIT License, allowing users to use, modify, and distribute the software freely, subject to certain conditions. Refer to the LICENSE file in the project repository for detailed license information.
-
-## Contact Information
-
-For inquiries, feedback, or support, please contact the AquaTech-Nexus team at aquatech-nexus@example.com. Visit the AquaTech-Nexus website for updates, announcements, and community forums: [https://aquatech-nexus.com](https://aquatech-nexus.com).
