@@ -8,6 +8,13 @@
 [![Ask Me Anything !](https://img.shields.io/badge/ask%20me-linkedin-1abc9c.svg)](https://www.linkedin.com/in/demiso-daba-swre0/)
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
+### 🌟 Take a Glimpse
+<p align="center"> 
+  <kbd>
+    <a href="https://DemisoDaba/AquaTech-Nexus" target="_blank"><img src="/flaskapp/static/videos/sample.gif" alt="Portfolio Preview">
+  </a>
+  </kbd>
+</p>
 
 ## Key Features
 
