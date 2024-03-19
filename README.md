@@ -39,13 +39,6 @@
 - Developers can integrate AquaTech-Nexus's APIs and tools into their applications for water-related research and projects.
 - Collaboration features enable teams to work together on projects, share findings, and collaborate on data analysis.
 
-## Deployment
-
-- Deploy AquaTech-Nexus on a cloud platform like AWS, Azure, or Google Cloud for scalability and reliability.
-- Utilize containerization tools like Docker for easy deployment and management of the application.
-- Configure load balancing and auto-scaling to handle varying loads and ensure optimal performance.
-- Set up monitoring and logging systems to track application health, performance metrics, and user activity.
-
 ## Contributing
 
 - AquaTech-Nexus welcomes contributions from the water research community, including bug fixes, feature enhancements, and documentation improvements.
