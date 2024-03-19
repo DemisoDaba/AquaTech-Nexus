@@ -1,6 +1,6 @@
 # Welcome to Webstack - Portfolio Project! 🚀
 
-> ## AquaTech-Nexus Descriptions
+> ## AquaTech-Nexus: Descriptions
 > AquaTech-Nexus is a comprehensive web application designed to serve the water research community. It aims to provide researchers, engineers, and developers with a powerful set of tools and resources for modeling, simulating, and analyzing various aspects of water systems. From hydrological modeling to water quality simulation, AquaTech-Nexus empowers users to tackle complex water-related challenges effectively.
 
 ![GitHub forks](https://img.shields.io/github/forks/DemisoDaba/DemisoDaba.github.io)
