@@ -27,10 +27,9 @@
 - **Python:** Core language for backend development and scripting tasks.
 - **Flask:** Micro web framework for building scalable and modular web applications.
 - **SQLAlchemy:** Object-relational mapping (ORM) library for database interactions.
-- **JavaScript (with libraries like D3.js):** Frontend scripting for interactive visualizations and dynamic user interfaces.
+- **JavaScript:** Frontend scripting for interactive visualizations and dynamic user interfaces.
 - **HTML/CSS:** Markup and styling for web page presentation and layout.
-- **SQLite/PostgreSQL:** Relational database management systems for data storage and retrieval.
-- **GIS Tools and Libraries (e.g., GeoPandas, GDAL):** Geospatial analysis and visualization tools for handling spatial data.
+- **SQLite3:** Relational database management systems for data storage and retrieval.
 
 ## Usage
 
