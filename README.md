@@ -28,22 +28,16 @@
 - **User Management:** Manage user accounts, roles, and permissions to control access to sensitive data and functionalities.
 - **Documentation and Resources:** Provide comprehensive documentation, tutorials, and resources to support users in utilizing the platform effectively.
 
-## Technologies Used
-
-- **Python:** Core language for backend development and scripting tasks.
-- **Flask:** Micro web framework for building scalable and modular web applications.
-- **SQLAlchemy:** Object-relational mapping (ORM) library for database interactions.
-- **JavaScript:** Frontend scripting for interactive visualizations and dynamic user interfaces.
-- **HTML/CSS:** Markup and styling for web page presentation and layout.
-- **SQLite3:** Relational database management systems for data storage and retrieval.
-
-
 # Technologies Used
 
 ## 1. Language Used
 - **Python**: Language used for writing the backend code of the web application.
 
-## 2. Backend Technologies Used
+## 2. Frontend Technologies Used
+   1. **HTML/CSS**: Markup and styling for web page presentation and layout.
+   2. **JavaScript**: Frontend scripting for interactive visualizations and dynamic user interfaces.
+
+## 3. Backend Technologies Used
    1. **Flask**: Micro web framework for Python, used for routing, request handling, and response generation.
        - Responsible for routing incoming HTTP requests to the appropriate handler functions.
        - Handles request handling and response generation.
@@ -72,8 +66,9 @@
        - Provides utilities for creating forms, validating form data, and rendering forms in templates.
        - Handles tasks related to form submission, input validation, and error handling.
 
-## 3. Framework Used
+## 4. Framework Used
 - **Flask**: Micro web framework for Python, responsible for routing, request handling, and response generation.
+- **Bootstrap**: Used for styling the form and adding interactivity.
 
 
 ## Usage
