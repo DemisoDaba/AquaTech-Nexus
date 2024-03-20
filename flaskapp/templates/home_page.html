@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/footer.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/container.css') }}">
 	<link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+	<script type="text/javascript" src="{{ url_for('static', filename='scripts/executeExe.js') }}"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/navbar.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/dropdown.css') }}"> <!-- Link to external CSS for dropdown styling -->
     <script type="text/javascript" src="{{ url_for('static', filename='scripts/main.js') }}"></script>
@@ -25,9 +26,9 @@
                 <li class="dropdown">
                     <a href="#" class="dropbtn live-score">Free-Tools</a>
                     <div class="dropdown-content">
-                        <a href="{{ url_for('optiflow') }}">Optiflow</a>
-						<a href="{{ url_for('aquasync') }}">AquaSync</a>
-						<a href="#">Filling ...</a>
+                        <a href="{{ url_for('optiflow') }}"><i class="fas fa-globe"></i> Optiflow</a>
+						<a href="{{ url_for('aquasync') }}"><i class="fas fa-globe"></i> AquaSyn</a>
+						<a href="{{ url_for('download_data_analyzer') }}"><i class="fas fa-download"></i> RF Fill</a>
                     </div>
                 </li>
                 <li><a id="contact" href="#contact">CONTACT</a></li>
@@ -78,7 +79,7 @@
                     <div class="book-details">
                         <p class="author">Demiso Daba</p>
                         <p class="book-title">GUI: for Filling Rainfall Data</p>
-                        <p class="price">Price: $54.99</p>
+                        <p class="price">Price: <del>$54.99</del> Free</p>
                         <p class="rating">Rating:&#9733;&#9733;&#9733;&#9733;&#9733; (5/5)</p>
                     </div>
                 </div>

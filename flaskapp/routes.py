@@ -385,3 +385,8 @@ def about():
 @app.route('/contact')
 def contact():
     return render_template('home_page.html')
+  
+@app.route('/DataAnalyzer.exe')
+def download_data_analyzer():
+    """Serves the DataAnalyzer.exe file"""
+    return send_from_directory(os.path.join(app.root_path, 'static'), 'DataAnalyzer.exe', as_attachment=True)
