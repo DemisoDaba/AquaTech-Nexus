@@ -37,6 +37,45 @@
 - **HTML/CSS:** Markup and styling for web page presentation and layout.
 - **SQLite3:** Relational database management systems for data storage and retrieval.
 
+
+# Technologies Used
+
+## 1. Language Used
+- **Python**: Language used for writing the backend code of the web application.
+
+## 2. Backend Technologies Used
+   1. **Flask**: Micro web framework for Python, used for routing, request handling, and response generation.
+       - Responsible for routing incoming HTTP requests to the appropriate handler functions.
+       - Handles request handling and response generation.
+       - Provides utilities for session management, authentication, and template rendering.
+
+   2. **SQLite3**: Relational database management system, used as the database engine for the web application.
+       - Embedded SQL database engine that implements a self-contained, serverless, zero-configuration, transactional SQL database engine.
+       - Used for storing application data in a structured format.
+
+   3. **Bcrypt**: Library for securely hashing passwords, ensuring user credentials are protected.
+       - Used for securely hashing passwords before storing them in the database.
+       - Provides functions for hashing passwords and verifying hashed passwords during user authentication.
+
+   4. **Flask-Login**: Flask extension for user session management and authentication, simplifying authentication processes.
+       - Manages user sessions and authentication in Flask applications.
+       - Simplifies the process of protecting routes that require authentication.
+       - Provides utilities for logging in users, logging out users, and managing user sessions.
+
+   5. **Flask-Mail**: Flask extension for sending emails, allowing the application to send transactional emails.
+       - Enables the sending of transactional emails from Flask applications.
+       - Used for sending emails such as verification emails or password reset emails to users.
+       - Configurable for various email providers and settings.
+
+   6. **Flask-WTF**: Flask extension for form handling, integrating WTForms with Flask for form creation and validation.
+       - Integrates WTForms with Flask for handling forms in web applications.
+       - Provides utilities for creating forms, validating form data, and rendering forms in templates.
+       - Handles tasks related to form submission, input validation, and error handling.
+
+## 3. Framework Used
+- **Flask**: Micro web framework for Python, responsible for routing, request handling, and response generation.
+
+
 ## Usage
 
 - Researchers can sign up for an account and log in to access AquaTech-Nexus's features.
