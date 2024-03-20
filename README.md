@@ -70,6 +70,10 @@
 - **Flask**: Micro web framework for Python, responsible for routing, request handling, and response generation.
 - **Bootstrap**: Used for styling the form and adding interactivity.
 
+## 5. Dynamic Templating Engine Used
+- **Jinja templating**: Web development frameworks like Flask to generate dynamic HTML content.
+    - **{% ... %}** is used for control flow statements like loops, conditionals, and block definitions.
+    - **{{ ... }}** is used to render expressions or variables dynamically into the HTML content.
 
 ## Usage
 
