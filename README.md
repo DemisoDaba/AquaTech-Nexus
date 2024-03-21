@@ -49,52 +49,34 @@
    - User interfaces are intuitive and user-friendly, providing an enjoyable browsing and purchasing experience.
    - Efforts are made to optimize performance and ensure fast loading times for seamless navigation.
 
-# Technologies Used
+## Technologies Used
 
-## 1. Language Used
-- **Python**: Language used for writing the backend code of the web application.
+### 1. Language Used
 
-## 2. Frontend Technologies Used
-   1. **HTML/CSS**: Markup and styling for web page presentation and layout.
-   2. **JavaScript**: Frontend scripting for interactive visualizations and dynamic user interfaces.
+- **Python**: Backend language for the web application.
 
-## 3. Backend Technologies Used
-   1. **Flask**: Micro web framework for Python, used for routing, request handling, and response generation.
-       - Responsible for routing incoming HTTP requests to the appropriate handler functions.
-       - Handles request handling and response generation.
-       - Provides utilities for session management, authentication, and template rendering.
+### 2. Frontend Technologies Used
 
-   2. **SQLite3**: Relational database management system, used as the database engine for the web application.
-       - Embedded SQL database engine that implements a self-contained, serverless, zero-configuration, transactional SQL database engine.
-       - Used for storing application data in a structured format.
+- **HTML/CSS**: Markup and styling.
+- **JavaScript**: Frontend scripting for interactive elements.
 
-   3. **Bcrypt**: Library for securely hashing passwords, ensuring user credentials are protected.
-       - Used for securely hashing passwords before storing them in the database.
-       - Provides functions for hashing passwords and verifying hashed passwords during user authentication.
+### 3. Backend Technologies Used
 
-   4. **Flask-Login**: Flask extension for user session management and authentication, simplifying authentication processes.
-       - Manages user sessions and authentication in Flask applications.
-       - Simplifies the process of protecting routes that require authentication.
-       - Provides utilities for logging in users, logging out users, and managing user sessions.
+- **Flask**: Micro web framework for Python.
+- **SQLite3**: Relational database management system.
+- **Bcrypt**: Library for securely hashing passwords.
+- **Flask-Login**: User session management and authentication.
+- **Flask-Mail**: Sending transactional emails.
+- **Flask-WTF**: Form handling.
 
-   5. **Flask-Mail**: Flask extension for sending emails, allowing the application to send transactional emails.
-       - Enables the sending of transactional emails from Flask applications.
-       - Used for sending emails such as verification emails or password reset emails to users.
-       - Configurable for various email providers and settings.
+### 4. Frameworks Used
 
-   6. **Flask-WTF**: Flask extension for form handling, integrating WTForms with Flask for form creation and validation.
-       - Integrates WTForms with Flask for handling forms in web applications.
-       - Provides utilities for creating forms, validating form data, and rendering forms in templates.
-       - Handles tasks related to form submission, input validation, and error handling.
+- **Flask**: Micro web framework for Python.
+- **Bootstrap**: Styling and interactivity.
 
-## 4. Framework Used
-- **Flask**: Micro web framework for Python, responsible for routing, request handling, and response generation.
-- **Bootstrap**: Used for styling the form and adding interactivity.
+### 5. Dynamic Templating Engine Used
 
-## 5. Dynamic Templating Engine Used
-- **Jinja templating**: Web development frameworks like Flask to generate dynamic HTML content.
-    - **{% ... %}** is used for control flow statements like loops, conditionals, and block definitions.
-    - **{{ ... }}** is used to render expressions or variables dynamically into the HTML content.
+- **Jinja templating**: Generating dynamic HTML content.
 
 ## Contributing
 
