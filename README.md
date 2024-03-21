@@ -10,7 +10,7 @@
 [![Ask Me Anything !](https://img.shields.io/badge/ask%20me-linkedin-1abc9c.svg)](https://www.linkedin.com/in/demiso-daba-swre0/)
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
-### 🌟 Take a Glimpse
+### 🌟 Take a Look at overview of web
 <p align="center"> 
   <kbd>
     <a href="https://DemisoDaba/AquaTech-Nexus" target="_blank"><img src="/flaskapp/static/videos/sample.gif" alt="Portfolio Preview">
@@ -24,9 +24,8 @@
 - [Technologies Used](#technologies-used)
 - [Contributing](#contributing)
 - [Credits](#credits)
-- [License](#license)
 - [Getting Started](#getting-started)
-
+- [License](#license)
 
 ## Key Features
 
@@ -62,32 +61,28 @@
 
 ## Technologies Used
 
-### 1. Language Used
+1. **Language Used:**
+   - Python: Backend language for the web application.
 
-- **Python**: Backend language for the web application.
+2. **Frontend Technologies Used:**
+   - HTML/CSS: Markup and styling.
+   - JavaScript: Frontend scripting for interactive elements.
 
-### 2. Frontend Technologies Used
+3. **Backend Technologies Used:**
+   - Flask: Micro web framework for Python.
+   - SQLite3: Relational database management system.
+   - Bcrypt: Library for securely hashing passwords.
+   - Flask-Login: User session management and authentication.
+   - Flask-Mail: Sending transactional emails.
+   - Flask-WTF: Form handling.
 
-- **HTML/CSS**: Markup and styling.
-- **JavaScript**: Frontend scripting for interactive elements.
+4. **Frameworks Used:**
+   - Flask: Micro web framework for Python.
+   - Bootstrap: Styling and interactivity.
 
-### 3. Backend Technologies Used
+5. **Dynamic Templating Engine Used:**
+   - Jinja templating: Generating dynamic HTML content.
 
-- **Flask**: Micro web framework for Python.
-- **SQLite3**: Relational database management system.
-- **Bcrypt**: Library for securely hashing passwords.
-- **Flask-Login**: User session management and authentication.
-- **Flask-Mail**: Sending transactional emails.
-- **Flask-WTF**: Form handling.
-
-### 4. Frameworks Used
-
-- **Flask**: Micro web framework for Python.
-- **Bootstrap**: Styling and interactivity.
-
-### 5. Dynamic Templating Engine Used
-
-- **Jinja templating**: Generating dynamic HTML content.
 
 ## Contributing
 
@@ -99,11 +94,6 @@
 
 - The AquaTech-Nexus project acknowledges the contributions of its developers, contributors, and users who have helped shape and improve the platform.
 - Credits to libraries, frameworks, and tools used in the development of AquaTech-Nexus, which have played a vital role in its functionality and performance.
-
-## License
-
-This project is licensed under the terms of the MIT license. See the [LICENSE](LICENSE) file for details.
-
 
 ## Getting Started
 
@@ -128,3 +118,8 @@ To quickly get a local copy up and running, follow these steps:
     ```
 
 4. **Open a web browser and go to:** [http://localhost:5000](http://localhost:5000)
+
+
+## License
+
+This project is licensed under the terms of the MIT license. See the [LICENSE](LICENSE) file for details.
