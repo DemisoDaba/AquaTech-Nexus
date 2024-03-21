@@ -18,6 +18,16 @@
   </kbd>
 </p>
 
+## Table of Contents
+
+- [Key Features](#key-features)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [Credits](#credits)
+- [License](#license)
+- [Getting Started](#getting-started)
+
+
 ## Key Features
 
 1. **User Registration Options:**
@@ -118,4 +128,3 @@ To quickly get a local copy up and running, follow these steps:
     ```
 
 4. **Open a web browser and go to:** [http://localhost:5000](http://localhost:5000)
-
