@@ -1,7 +1,8 @@
 # AquaTech Nexus Web Application 🚀
 
 > ## AquaTech-Nexus: Descriptions
->The AquaTech Nexus web application is designed to serve as a water research code library platform by providing access to various resources, including books, codes, notebooks, and free tools. Users can register either as writers contributing to the platform or as clients interested in purchasing or utilizing these resources. It offers various features for users to explore, purchase, and interact with resources related to water research. It offers a user-friendly interface with essential features for exploring and interacting with water research-related resources. With its responsive design, dynamic content rendering, and interactive features, it provides an engaging platform for users interested in water research.
+> The AquaTech Nexus web application serves as a comprehensive platform for water research, offering access to a wide range of resources such as books, codes, notebooks, and tools.
+> Users can register either as writers to contribute content or as clients to explore and utilize these resources. With its user-friendly interface, dynamic content, and interactive features, AquaTech Nexus provides an engaging environment for water research community.
 
 
 ![GitHub forks](https://img.shields.io/github/forks/DemisoDaba/DemisoDaba.github.io)
@@ -94,89 +95,27 @@
 This project is licensed under the terms of the MIT license. See the [LICENSE](LICENSE) file for details.
 
 
+## Getting Started
 
+To quickly get a local copy up and running, follow these steps:
 
-# AquaTech Nexus Web Application 🚀
+1. **Clone the repository:**
 
-## Description
+    ```bash
+    git clone https://github.com/your-username/your-project.git
+    ```
 
-The AquaTech Nexus web application serves as a comprehensive platform for water research, offering access to a wide array of resources such as books, codes, notebooks, and tools. Users can register either as writers to contribute content or as clients to explore and utilize these resources. With its user-friendly interface, dynamic content, and interactive features, AquaTech Nexus provides an engaging environment for water research enthusiasts.
+2. **Navigate into the project directory:**
 
-![GitHub forks](https://img.shields.io/github/forks/DemisoDaba/DemisoDaba.github.io)
-[![Website shields.io](https://img.shields.io/badge/website-up-yellow)](http://DemisoDaba.github.io/)
-[![Ask Me Anything !](https://img.shields.io/badge/ask%20me-linkedin-1abc9c.svg)](https://www.linkedin.com/in/demiso-daba-swre0/)
-[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
+    ```bash
+    cd your-project
+    ```
 
-### 🌟 Take a Glimpse
-<p align="center"> 
-  <kbd>
-    <a href="https://DemisoDaba/AquaTech-Nexus" target="_blank"><img src="/flaskapp/static/videos/sample.gif" alt="Portfolio Preview">
-  </a>
-  </kbd>
-</p>
+3. **Run the Flask application:**
 
-## Key Features
+    ```bash
+    python app.py
+    ```
 
-1. **User Registration Options:**
-   - Register as a writer to contribute content or as a client to access resources.
-   - Choose user type during registration for tailored platform experience.
-
-2. **Writer Features:**
-   - Upload and publish books, codes, notebooks, and more.
-   - Manage published content efficiently.
-
-3. **Client Features:**
-   - Browse, search, and purchase resources.
-   - Access diverse materials related to water research.
-
-4. **User Authentication and Security:**
-   - Secure user authentication ensures data confidentiality.
-   - Robust security measures protect user information.
-
-5. **Content Categorization and Search:**
-   - Organized resources for easy navigation.
-   - Powerful search functionality for efficient exploration.
-
-6. **Responsive Design and User Experience:**
-   - Adaptable design for seamless user experience across devices.
-   - Intuitive interfaces for enjoyable interaction.
-
-## Technologies Used
-
-### Language
-- **Python**
-
-### Frontend
-   - **HTML/CSS**
-   - **JavaScript**
-
-### Backend
-   - **Flask**
-   - **SQLite3**
-   - **Bcrypt**
-   - **Flask-Login**
-   - **Flask-Mail**
-   - **Flask-WTF**
-
-### Framework
-- **Flask**
-- **Bootstrap**
-
-### Dynamic Templating Engine
-- **Jinja Templating**
-
-## Contributing
-
-- AquaTech Nexus welcomes contributions from the water research community.
-- Follow project guidelines and standards when submitting contributions.
-- Report issues and feature requests on GitHub for discussion and resolution.
-
-## Credits
-
-- Acknowledgment to developers, contributors, and users.
-- Appreciation for libraries, frameworks, and tools used in development.
-
-## License
-
-This project is licensed under the terms of the MIT license. See the [LICENSE](LICENSE) file for details.
+4. **Open a web browser and go to:** [http://localhost:5000](http://localhost:5000)
 
