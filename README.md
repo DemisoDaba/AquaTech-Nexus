@@ -102,13 +102,13 @@ To quickly get a local copy up and running, follow these steps:
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/your-username/your-project.git
+    git clone https://github.com/DemisoDaba/AquaTech-Nexus.git
     ```
 
 2. **Navigate into the project directory:**
 
     ```bash
-    cd your-project
+    cd AquaTech-Nexus
     ```
 
 3. **Run the Flask application:**
