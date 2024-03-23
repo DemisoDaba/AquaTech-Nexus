@@ -36,7 +36,7 @@
 
 2. **Writer Features:**
    - Writers have the ability to upload and publish books, codes, notebooks, and other relevant content related to water research.
-   - They can manage their published content, including editing, updating, or removing it as needed.
+   - They can manage their published content, including editing, updating it as needed.
    - Writers may also access additional tools and features tailored for content creation and management.
 
 3. **Client Features:**
