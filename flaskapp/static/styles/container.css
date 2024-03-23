@@ -33,13 +33,13 @@
 }
 .pink-container{
     width: 100%;
-    background-color: #00CCCC;
+    background-color: #008080;
     padding: 10% 0;
 }
 .book-container-title{
     font-size: 50px;
     text-align: center;
-    color: #545252;
+    color: white;
 }
 .book-container-sub-title{
     font-size: 18px;
@@ -47,7 +47,7 @@
     margin: 10px auto;
     width: 40%;
     font-weight: 200;
-    color: #7b7979;
+    color: white;
 }
 .book-preview-container{
     width: 100%;

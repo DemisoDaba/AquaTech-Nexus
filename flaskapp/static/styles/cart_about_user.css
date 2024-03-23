@@ -1,0 +1,22 @@
+/* Additional CSS styles for Contact, Cart, and User links */
+.contact,
+.cart,
+.user {
+    margin-left: 20px; /* Adjust the spacing between navbar items */
+}
+
+.contact a,
+.cart a,
+.user a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+.contact a:hover,
+.cart a:hover,
+.user a:hover {
+    color: #5c5c61;
+}
