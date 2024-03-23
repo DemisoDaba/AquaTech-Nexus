@@ -2,13 +2,10 @@
 <html lang="en">
 <head>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-	<!-- Bootstrap CSS -->
-	
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/header.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/footer.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/container.css') }}">
-	<link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
-	<script type="text/javascript" src="{{ url_for('static', filename='scripts/executeExe.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/navbar.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/dropdown.css') }}"> <!-- Link to external CSS for dropdown styling -->
     <script type="text/javascript" src="{{ url_for('static', filename='scripts/main.js') }}"></script>
@@ -28,9 +25,9 @@
                 <li class="dropdown">
                     <a href="#" class="dropbtn live-score">Free-Tools</a>
                     <div class="dropdown-content">
-                        <a href="{{ url_for('optiflow') }}"><i class="fas fa-globe"></i> Optiflow</a>
-						<a href="{{ url_for('aquasync') }}"><i class="fas fa-globe"></i> AquaSyn</a>
-						<a href="{{ url_for('download_data_analyzer') }}"><i class="fas fa-download"></i> RF Fill</a>
+                        <a href="{{ url_for('optiflow') }}">Optiflow</a>
+						<a href="{{ url_for('aquasync') }}">AquaSync</a>
+						<a href="#">Filling ...</a>
                     </div>
                 </li>
                 <li><a id="contact" href="#contact">CONTACT</a></li>
@@ -81,7 +78,7 @@
                     <div class="book-details">
                         <p class="author">Demiso Daba</p>
                         <p class="book-title">GUI: for Filling Rainfall Data</p>
-                        <p class="price">Price: <del>$54.99</del> Free</p>
+                        <p class="price">Price: $54.99</p>
                         <p class="rating">Rating:&#9733;&#9733;&#9733;&#9733;&#9733; (5/5)</p>
                     </div>
                 </div>
@@ -108,14 +105,14 @@
                 <div class="about-container-buttons">
                     {% if current_user.is_authenticated %}
                         {% if current_user.usertype == "writer" %}
-                            <button id="buy_button_authenticated">Order to buy</button>
-                            <button id="publish_button_authenticated">Publish | Cover & Code</button>
+                            <button id="buy_button_authenticated">Order to Buy</button>
+                            <button id="publish_button_authenticated">Publish Yours</button>
                         {% else %}
-                            <button id="buy_button_authenticated">Order to buy</button>
+                            <button id="buy_button_authenticated">Order to Buy</button>
                         {% endif %}
                     {% else %}
-                        <button id="buy_button">Order to buy</button>
-                        <button id="publish_button">Publish | Cover & Code</button>
+                        <button id="buy_button">Order to Buy</button>
+                        <button id="publish_button">Publish Yours</button>
                     {% endif %}
                 </div>
             </div>
@@ -137,14 +134,14 @@
         <footer>
             <div class="footer_flex">
                 <div class="footer_flex_section1">
-                    <h3>
+                    <h1>
                         AquaTech Nexus
-                    </h3>
+                    </h1>
                     <div class="line">
 
                     </div>
-                    <h6>Privacy Policy: Read here</h6>
-					<h6>Designed By Demiso Daba</h6>
+                    <h5>Privacy Policy: Read here</h5>
+					<h5>Designed By Demiso Daba</h5>
                 </div>
                 <div class="footer_flex_section2">
                     <h3>Road Map</h3> 					
@@ -154,7 +151,7 @@
 						<li>About Us, Blog/News & FAQ</li>
                     </ul> 
                     <div class="copyrights">
-                        <h6>© 2024 AquaTech Nexus. All Rights Reserved</h6>
+                        <h5>© 2024 AquaTech Nexus. All Rights Reserved</h5>
                     </div>
                 </div>
                 <div class="footer_flex_section3">

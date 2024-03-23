@@ -59,13 +59,11 @@ gunicorn==21.2.0
 h11==0.14.0
 h5py==3.10.0
 idna==3.6
-imageio==2.34.0
 invoke==2.2.0
 itsdangerous==2.1.2
 Jinja2==3.1.2
 jsonschema==4.20.0
 jsonschema-specifications==2023.11.1
-keras==2.15.0
 kiwisolver==1.4.5
 lazy_loader==0.3
 libclang==16.0.6
