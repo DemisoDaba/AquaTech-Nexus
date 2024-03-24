@@ -20,7 +20,6 @@
               </button>
             </div>
             <div class="modal-body">
-                 
                 <form method="post" class="form_update" action="" enctype="multipart/form-data">
                     {{ form.hidden_tag() }}
                     <div>
@@ -35,8 +34,7 @@
                         {% else %}
                             {{ form.title() }}
                         {% endif %}
-                    </div>
-                  
+                    </div>                
                     <div>
                         {{ form.subtitle.label }}
                     {% if form.subtitle.errors %}
@@ -49,8 +47,7 @@
                     {% else %}
                         {{ form.subtitle() }}
                     {% endif %}
-                    </div>
-                    
+                    </div>                   
                     <div>
                         {{ form.description.label }}
                     {% if form.description.errors %}
@@ -63,8 +60,7 @@
                     {% else %}
                         {{ form.description() }}
                     {% endif %}
-                    </div>
-                    
+                    </div>                  
                     <div>
                         {{ form.genre.label }}
                     {% if form.genre.errors %}
@@ -129,7 +125,6 @@
                                     document.querySelector('[name="description"]').value = data.description;
                                     document.querySelector('[name="genre"]').value = data.genre;
                                     document.querySelector('[name="price"]').value = data.price;
-                                    // Add other fields as needed
                                     form = $('.form_update')
                                     form.attr('action', '/updatebook/'+bookId)
                                 })

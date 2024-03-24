@@ -19,15 +19,12 @@
     <title>AquaTech Nexus: Water Research Code Library</title>
     <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/icon.png') }}">
 </head>
-
-<body>
-    
+<body> 
     <div class="navbar1" id="navbar">
         <a class="navbar-item-icon" href="{{ url_for('home') }}" >
 			<span style="color: black;">Back-</span>
 			<span style="color: black;">To-</span>
-			<span style="color: black;">Home</span>
-			
+			<span style="color: black;">Home</span>			
         </a>
         <p class="username1">{{ current_user.username }}</p>
         <a class="navbar-item" href="{{ url_for('logout') }}" style="color: red;">Logout</a>
@@ -52,8 +49,7 @@
                     <p>My Account</p>
                 </div>
             {% endif %}
-        </div>
-      
+        </div>     
         <div class="content-container">
             {% if tab_name %}{% include tab_name + '.html' %}{% endif %}
             <script>
@@ -61,17 +57,14 @@
             </script>
         </div>
     </div>
-
     {% with messages = get_flashed_messages(with_categories=true) %}
             {% if messages %}
                 {% for category, message in messages %}
                     <div class="alert" id="alert">
                         {{ message }}
-                    </div>
-                
+                    </div>              
                 {% endfor %}
             {% endif %}
          {% endwith %}
 </body>
-
 </html>
