@@ -11,7 +11,8 @@
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
 ## The architectural follow of the project
-![good drawio (10)](https://github.com/DemisoDaba/AquaTech-Nexus/assets/125874545/d673104e-8e0d-4594-acbd-5e06bafd838e)
+![AquaTech-Nuxes](https://github.com/DemisoDaba/AquaTech-Nexus/assets/125874545/a85463a2-673e-4bb0-ac9b-c2ddec7f73f1)
+
 
 
 ### 🌟 Take a Look at overview of web
