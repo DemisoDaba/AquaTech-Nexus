@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OptiFlow | Water Application Recommendations</title>
-	<link rel="stylesheet" href="../static/styles/optiflow_styles.css">
+    <link rel="stylesheet" href="../static/styles/optiflow_styles.css">
 </head>
 <body>
     <header>
+        <div class="navbar1" id="navbar">
+            <a class="navbar-item-icon" href="{{ url_for('home') }}">
+                <span style="color: red;">Back-</span>
+                <span style="color: red;">To-</span>
+                <span style="color: red;">Home</span>
+            </a>
+        </div>
         <h1>OptiFlow | Water Applications</h1>
     </header>
-
     <div class="container">
         <form id="recommendationForm">
             <label for="crop_type">Select Crop Type:</label>
